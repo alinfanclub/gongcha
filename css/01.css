@@ -121,6 +121,9 @@ header {
 }
 
 /* main_visual */
+.main_visual_mb {
+  display: none;
+}
 .main_visual {
   max-width: 1960px;
   width: 100%;
@@ -573,6 +576,12 @@ header {
 }
 .con05_in div p a {
   color: white;
+}
+.con05_in > div ul li {
+  display: none;
+}
+.con05_in > div img:nth-of-type(1) {
+  display: block;
 }
 
 /* con06 */
