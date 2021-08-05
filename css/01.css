@@ -756,8 +756,10 @@ footer {
 
 @media screen and (max-width:1273px) {
   .header_in {
-    position: relative;
+    z-index: 7;
     height: 80px;
+    padding: 5px 0;
+    background-color: #fff;
   }
   .header_in .header_logo{
     position: absolute;
@@ -791,6 +793,9 @@ footer {
   .main_visual {
     overflow: auto;
     display: none;
+  }
+  .main_visual_mb {
+    display: block;
   }
   .main_visual_mb img {
     width: 100%;
@@ -828,6 +833,7 @@ footer {
     border: 1px solid #555;
     box-sizing: border-box;
   }
+  /* con01 */
   .con01 h2 {
     font-size: 6vw;
   }
@@ -841,7 +847,7 @@ footer {
     font-size: 2.5vw;
   }
   .con01_in  .slick-dots {
-    bottom: -4.2vh;
+    bottom: -6vh;
   }
   .con01_in  .slick-dots li button:before {
     display: none;
@@ -861,11 +867,11 @@ footer {
   }
   /* con002 */
   .con02 {
-    height: 20vh;
+    height: 15vh;
   }
   .con02_in a p {
-    font-size: 5.5vw;
-    line-height: 20vh;
+    font-size: 4.5vw;
+    line-height: 15vh;
     z-index: 2;
 
   }
@@ -875,7 +881,7 @@ footer {
 
   /* con003 */
   .con03 h2 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .con03_in > div a .con03_pd_title {
     font-size: 3vw;
@@ -887,7 +893,7 @@ footer {
     font-size: 2.5vw;
   }
   .con03_in  .slick-dots {
-    bottom: -4.2vh;
+    bottom: -6vh;
   }
   .con03_in  .slick-dots li button:before {
     display: none;
@@ -924,38 +930,70 @@ footer {
     height: auto;
   }
   .con04_in .con04_right {
-    height: 55vh;
+    height: auto;
+    padding: 2vh 5vw;
   }
-  .con004_in {
+  .con04_in .con04_right h3 {
+    font-size: 7vw;
+    margin-top: 0;
+  }
+  .con04_in .con04_right h4 {
+    font-size: 4.5vw;
+    margin-bottom: 2vh;
+
+  }
+  .con04_in {
     height: auto;
   }
   .con04_button {
     width: 90vw;
+    position: static;
+    transform: translate(0, 0);
   }
   .con04_in .con04_right input[type="text"],
   .con04_button div input[type="submit"],
   .con04_button > div {
     width: 42vw;
-    height: 10vh;
+    height: 7vh;
+    position: static;
+    transform: translate(0, 0);
+    font-size: 4vw;
+  }
+  .con04_button > div a {
+    font-size: 4vw;
   }
   .con04_in .con04_right input[type="text"] {
     width: 90vw;
+    height: 7vh;
+    
+  }
+  .con04_in .con04_right input[type="text"]::placeholder {
+    font-size: 3vw;  
   }
   .con04_button > div {
-    line-height: 10vh;
+    line-height: 0;
+  }
+  .con04_button .showall {
+    line-height: 7vh;
   }
   .con04_in .con04_right input[type="text"] {
     bottom: 20vh
   }
 
+
+  /* con05 */
+
   .con05_in {
     max-width: 1273px;
     width: 100%;
     margin: 0 auto;
-    height: 30vh;
+    height: auto;
     background: url(../img/brand_main_section3_img_bg.jpg) center center / cover no-repeat;
     position: relative;
     z-index: -2;
+    /* margin: 10px 0; */
+    padding: 2vh 5vw;
+    box-sizing: border-box;
   }
   .con05_in h3 {
     display: none;
@@ -963,7 +1001,8 @@ footer {
   .con05_in h4 {
     display: block;
     text-align: center;
-    font-size: 40px;
+    font-size: 5vw;
+    margin-bottom: 3vw;
   }
   .con05_in div {
     height: 100%
@@ -972,20 +1011,48 @@ footer {
     display: none;
   }
   .con05_in div p {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-
+    position: static;
+    margin: 0 auto;
+    width: 25vw;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2.5vw;
+    margin-top: 5vw;
+  }
+  .con05_in > div ul {
+    margin-bottom: 2vw;
+  }
+  .con05_in > div ul li {
+    display: block;
+  }
+  .con05_in > div ul li:nth-child(1) {
+    font-size: 4.5vw;
+    margin-bottom: 2vw;
+    font-weight: 600;
+  }
+  .con05_in > div ul li:nth-child(1) span {
+    color: #c32033;
+  }
+  .con05_in > div ul li:nth-child(2),
+  .con05_in > div ul li:nth-child(3),
+  .con05_in > div ul li:nth-child(4) {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    font-weight: 500;
+  }
+  .con05_in > div ul li:nth-child(4) span {
+    color: #c38811;
   }
   .con05_in > div img:nth-of-type(2) {
     display: block;
     position: absolute;
-    width: 25vh;
-    bottom: 0;
-    right: 0;
+    width: 20vh;
+    bottom: -2vh;
+    right: -5vw;
     z-index: -1;
   }
+
+  /* con06 */
   .con06 {
     display: none;
   }
