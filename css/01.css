@@ -865,6 +865,12 @@ footer {
     border: 1px solid #555;
     box-sizing: border-box;
   }
+  .con01_btn {
+    width: 50vw;
+    height: 15vw;
+    line-height: 15vw;
+    font-size: 3vw;
+  }
   /* con002 */
   .con02 {
     height: 15vh;
@@ -910,6 +916,12 @@ footer {
     background-color: #555;
     border: 1px solid #555;
     box-sizing: border-box;
+  }
+  .con03_btn {
+    width: 50vw;
+    height: 15vw;
+    line-height: 15vw;
+    font-size: 3vw;
   }
 
   /* con004 */
@@ -1134,11 +1146,11 @@ footer {
     display: inline-block;
     margin-right: 23px;
     margin-bottom: 20px;
-    font-size: 1vw;
+    font-size: 3vw;
     position: relative;
   }
   .footer_in .footer_text div:nth-child(1) ul li:nth-child(4) a {
-    font-size: 1.5vw;
+    font-size: 3.5vw;
   }
   .footer_text div:nth-child(3) ul li {
     margin-bottom: 1vw;
