@@ -835,7 +835,7 @@ footer {
   }
   /* con01 */
   .con01 h2 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .con01_in > div .con01_pd_title {
     font-size: 3vw;
@@ -934,11 +934,11 @@ footer {
     padding: 2vh 5vw;
   }
   .con04_in .con04_right h3 {
-    font-size: 7vw;
+    font-size: 5vw;
     margin-top: 0;
   }
   .con04_in .con04_right h4 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin-bottom: 2vh;
 
   }
@@ -949,6 +949,7 @@ footer {
     width: 90vw;
     position: static;
     transform: translate(0, 0);
+    margin-top: 5vw;
   }
   .con04_in .con04_right input[type="text"],
   .con04_button div input[type="submit"],
@@ -1064,12 +1065,82 @@ footer {
 
 
 @media screen and (max-width : 640px) {
+  .con01 h2 {
+    margin: 7vw 0;
+  }
+  .con01_btn {
+    margin-top: 12vw;
+    margin-bottom: 7vw;
+  }
+  .con01_in .con01_pd {
+    height: auto;
+    padding: 0 5vw;
+
+  }
+  .con01_in .slick-dots {
+    bottom: -8vw;
+  }
   .con02 {
-    height: 23vh;
+    height: 25vw;
+    margin-bottom: 7vw;
   }
   .con02_in a p {
     font-size: 5.5vw;
-    line-height: 23vh;
+    line-height: 25vw;
     z-index: 2;
+  }
+  .con03 h2 {
+    margin: 7vw 0;
+  }
+  .con03_in .con03_pd {
+    height: auto;
+    padding: 0 5vw;
+
+  }
+  .con03_pd_title span {
+    font-size: 2vw;
+  }
+  .con03_btn {
+    margin-top: 12vw;
+    margin-bottom: 7vw;
+  }
+  .con03_in .slick-dots {
+    bottom: -8vw;
+  }
+  .con04 {
+    margin-bottom: 7vw;
+  }
+  .con04_in .con04_left {
+    margin-bottom: 7vw;
+  }
+  .con04_in .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+  .con05 {
+    margin-bottom: 7vw;
+  }
+
+
+  .footer_in {
+    padding: 0;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    padding-left: 5vw;
+  }
+  .footer_icon {
+    display: none;
+  }
+  .footer_in ul li {
+    display: inline-block;
+    margin-right: 23px;
+    margin-bottom: 20px;
+    font-size: 1vw;
+    position: relative;
+  }
+  .footer_in .footer_text div:nth-child(1) ul li:nth-child(4) a {
+    font-size: 1.5vw;
+  }
+  .footer_text div:nth-child(3) ul li {
+    margin-bottom: 1vw;
   }
 }
