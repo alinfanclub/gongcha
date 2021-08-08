@@ -171,6 +171,178 @@
                             </li>
                         </ul>
                     </li>
+                </ul>
+            </div>
+
+            <!-- header_in_mb -->
+            <div class="header_in_mb">
+                <div class="header_in_mb_top">
+                    <div class="header_in_mb_top_in">
+                        <img src="img/logo_height_re.png">
+                        <i class="fas fa-times" id="close_menu_mb"></i>
+                    </div>
+                </div>
+                <ul>
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Brand
+                                <i class="fas fa-plus"></i> 
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    브랜드 소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    공차의 약속
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    브랜드 아이덴티티
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    세계속의 공차
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Menu
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    주문방법
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    음료
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    디저트
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    MD상품
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    티스토리
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    티레시피
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Store
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    매장찾기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    가맹점 개설문의
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Membership
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    NEW 공차 멤버십
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    공차카드 & e-GIFT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Benefit
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    통신사 제휴
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    결제 서비스
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <h2>
+                            <a href="#">
+                                Evnet&News
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </h2>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">
+                                    이벤트
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    공차소식
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
                 </ul>
             </div>
@@ -737,7 +909,8 @@
             $('.main_visual_mb').slick({
                 dots:true,
                 autoplay: true,
-                autoplaySpeed: 5000
+                autoplaySpeed: 5000,
+                arrows: false 
                 
             });
 
@@ -776,7 +949,13 @@
                 dots:true,
                 autoplay: true,
                 autoplaySpeed: 5000,
-                draggable: false
+                draggable: false,
+                responsive: [{
+                    breakpoint: 1273,
+                    settings: {
+                        arrows: false,
+                    }
+                }]
             });
             $('.con06_slide').css({
                 'width' : '600px'
@@ -809,6 +988,32 @@
                         $('.quick_on').css({
                         'display' : 'none'
                     })}
+                }
+            );
+            $('#burger_button').click(
+                function(){
+                    $('.header_in_mb').animate({
+                        'right' : '0'
+                    })
+                }
+            );
+            $('#close_menu_mb').click(
+                function(){
+                    $('.header_in_mb').animate({
+                        'right' : '-200%'
+                    })
+                }
+            );
+
+            $('.header_in_mb > ul >  li > h2').click(
+                function(){
+                    if($(this).next().css('display') == 'none'){
+                        $('.header_in_mb .depth02').slideUp()
+                        $(this).stop().next().slideDown().css({
+                            'border-top' : '1px solid #333'
+                        })
+                    } else {$(this).next().slideUp()}
+                    // $('.header_in_mb .depth02').slideDown()
                 }
             );
         </script>
