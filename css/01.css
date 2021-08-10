@@ -54,7 +54,7 @@ header {
   /* background-color: rgba(238, 130, 238, 0.212); */
 }
 .header_in div img {
-  width: 100%;
+  width: 80%;
   transform: translateY(2px);
 }
 .header_menu > ul > li {
@@ -105,8 +105,7 @@ header {
   font-size: 20px;
   padding: 10px;
   font-weight: 500;
-  transition: .5s;
-  
+  transition: 0.5s;
 }
 .gongchafm a:hover {
   /* text-decoration: underline; */
@@ -1173,7 +1172,7 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-  main .con01 h2 {
+  .con01 h2 {
     margin: 7vw 0;
   }
   .con01_btn {

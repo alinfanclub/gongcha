@@ -410,6 +410,50 @@
         <div class="con01_in">
             <ul class="con_list">
                 <li class="on">
+                    <img src="img/5th.png">
+                    <span>
+                        2021 / 08 / 03
+                    </span>
+                    <dl>
+                        <dt>
+                            2021 여름 시즌 음료 3종
+                        </dt>
+                        <!-- <dd>
+                            <li>
+                                초당옥수수 밀크티 + 펄
+                            </li>
+                            <li>
+                                초당옥수수 팝핑 스무디
+                            </li>
+                            <li>
+                                초당옥수수 치즈쥬얼리 스무디
+                            </li>
+                        </dd> -->
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/6th.png">
+                    <span>
+                        2021 / 07 / 22
+                    </span>
+                    <dl>
+                        <dt>
+                            2021  여름 디저트 신메뉴 2종            
+                        </dt>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/2th.png">
+                    <span>
+                        2021 / 07 / 14
+                    </span>
+                    <dl>
+                        <dt>
+                            2021 여름 스페셜 시즌음료 3종 
+                        </dt>
+                    </dl>
+                </li>
+                <li>
                     <img src="img/1th.png">
                     <span>
                         2021 / 06 / 01
@@ -420,42 +464,39 @@
                         </dt>
                     </dl>
                 </li>
-                <li>
-                    <img src="img/2th.png">
-                    <span>
-                        2021 / 06 / 01
-                    </span>
-                    <dl>
-                        <dt>
-                            2021 봄-여름 스페셜 시즌 음료 
-                        </dt>
-
-                    </dl>
-                </li>
-                <li>
-                    <img src="img/4th.png">
-                    <span>
-                        2021 / 06 / 01
-                    </span>
-                    <dl>
-                        <dt>
-                            2021 봄-여름 스페셜 시즌 음료 
-                        </dt>
-                        <dd>
-                            복숭아 쥬얼리 밀크티 / 복숭아 쥬얼리 요구르트 크러쉬 
-                        </dd>
-                    </dl>
-                </li>
             </ul>
             <ul class="tap_list">
                 <li class="on">
-                    <img src="img/1th.png">
+                    <img src="img/5th.png">
+                    <dl>
+                        <dt>
+                            2021 여름 시즌 음료 3종
+                        </dt>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/6th.png">
+                    <dl>
+                        <dt>
+                            2021  여름 디저트 신메뉴 2종 
+                        </dt>
+                    </dl>
                 </li>
                 <li>
                     <img src="img/2th.png">
+                    <dl>
+                        <dt>
+                            2021 여름 스페셜 시즌음료 3종 
+                        </dt>
+                    </dl>
                 </li>
                 <li>
-                    <img src="img/4th.png">
+                    <img src="img/1th.png">
+                    <dl>
+                        <dt>
+                            2021 봄-여름 스페셜 시즌 음료 2종
+                        </dt>
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -594,12 +635,12 @@
                     $('.con01_slide li').eq($(this).index()).addClass('on');
                 }
             );
-            $('.tap_list li').click(
+            $('.tap_list  li').click(
                 function(){
                     $('.tap_list li').removeClass('on');
                     $(this).addClass('on')
-                    $('.con_list li').removeClass('on');
-                    $('.con_list li').eq($(this).index()).addClass('on');
+                    $('.con_list > li').removeClass('on');
+                    $('.con_list > li').eq($(this).index()).addClass('on');
                 }
             );
 

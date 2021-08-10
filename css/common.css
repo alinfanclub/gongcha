@@ -34,7 +34,7 @@ header {
   /* background-color: rgba(238, 130, 238, 0.212); */
 }
 .header_in div img {
-  width: 100%;
+  width: 80%;
   transform: translateY(2px);
 }
 .header_menu > ul > li {
@@ -85,8 +85,7 @@ header {
   font-size: 20px;
   padding: 10px;
   font-weight: 500;
-  transition: .5s;
-  
+  transition: 0.5s;
 }
 .gongchafm a:hover {
   /* text-decoration: underline; */
@@ -182,154 +181,150 @@ header {
   display: none;
 }
 .header_in #burger_button {
-    display: none;
-  }
+  display: none;
+}
 
 /* footer */
 footer {
-    width: 100%;
-    background-color: #f7f7f7;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.footer_in {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.footer_in .footer_icon {
+  width: 90px;
+  margin-right: 30px;
+}
+.footer_in img {
+  width: 100%;
+  padding-top: 2px;
+}
+.footer_in ul li {
+  display: inline-block;
+  margin-right: 23px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  position: relative;
+}
+.footer_text div ul li,
+.footer_text div ul li a {
+  color: #555;
+  font-weight: 400;
+}
+/* .footer_in .footer_text div:nth-child(1) ul li {
+  } */
+.footer_in .footer_text div:nth-child(1) ul li::before {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+.footer_in .footer_text div:nth-child(1) ul li:last-child::before {
+  display: none;
+}
+.footer_in .footer_text div:nth-child(1) ul li:nth-child(4) a {
+  font-size: 16px;
+  position: relative;
+  /* border-bottom: 2px solid #c32033; */
+  padding-bottom: 0px;
+  color: #c32033;
+}
+.footer_in .footer_text div:nth-child(1) ul li a:hover {
+  /* border-bottom: 1px solid #666;
+    padding-bottom: 2px; */
+  color: #c32033;
+  box-sizing: border-box;
+}
+
+.footer_in .footer_text div:nth-child(3) ul li::before {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+.footer_in .footer_text div:nth-child(3) ul li:last-child::before {
+  display: none;
+}
+.footer_in .footer_text div:nth-child(3) ul li {
+  color: #666;
+}
+
+@media screen and (max-width: 1273px) {
+  .header_in {
+    z-index: 7;
+    height: 80px;
+    padding: 5px 0;
+    background-color: #fff;
+    position: relative;
   }
+  .header_in .header_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header_in .gongchafm {
+    display: none;
+  }
+  .header_in #burger_button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 30px;
+  }
+  .header_menu {
+    display: none;
+  }
+  #header_bg {
+    display: none;
+  }
+  .header_top p {
+    font-size: 2.5vw;
+  }
+  .header_top img {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .footer_in {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    box-sizing: border-box;
+    padding: 0;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    padding-left: 5vw;
   }
-  .footer_in .footer_icon {
-    width: 90px;
-    margin-right: 30px;
-  }
-  .footer_in img {
-    width: 100%;
-    padding-top: 2px;
+  .footer_icon {
+    display: none;
   }
   .footer_in ul li {
     display: inline-block;
     margin-right: 23px;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 3vw;
     position: relative;
-  }
-  .footer_text div ul li,
-  .footer_text div ul li a {
-    color: #555;
-    font-weight: 400;
-  }
-  /* .footer_in .footer_text div:nth-child(1) ul li {
-  } */
-  .footer_in .footer_text div:nth-child(1) ul li::before {
-    content: "";
-    width: 1px;
-    height: 80%;
-    background-color: #ccc;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -16px;
-  }
-  .footer_in .footer_text div:nth-child(1) ul li:last-child::before {
-    display: none;
   }
   .footer_in .footer_text div:nth-child(1) ul li:nth-child(4) a {
-    font-size: 16px;
-    position: relative;
-    /* border-bottom: 2px solid #c32033; */
-    padding-bottom: 0px;
-    color: #c32033;
+    font-size: 3.5vw;
   }
-  .footer_in .footer_text div:nth-child(1) ul li a:hover {
-    /* border-bottom: 1px solid #666;
-    padding-bottom: 2px; */
-    color: #c32033;
-    box-sizing: border-box;
+  .footer_text div:nth-child(3) ul li {
+    margin-bottom: 1vw;
   }
-  
-  .footer_in .footer_text div:nth-child(3) ul li::before {
-    content: "";
-    width: 1px;
-    height: 80%;
-    background-color: #ccc;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -16px;
-  }
-  .footer_in .footer_text div:nth-child(3) ul li:last-child::before {
-    display: none;
-  }
-  .footer_in .footer_text div:nth-child(3) ul li {
-    color: #666;
-  }
-
-
-
-
-
-@media screen and (max-width: 1273px) {
-    .header_in {
-        z-index: 7;
-        height: 80px;
-        padding: 5px 0;
-        background-color: #fff;
-        position: relative;
-      }
-      .header_in .header_logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .header_in .gongchafm {
-        display: none;
-      }
-      .header_in #burger_button {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 30px;
-      }
-      .header_menu {
-        display: none;
-      }
-      #header_bg {
-        display: none;
-      }
-      .header_top p {
-        font-size: 2.5vw;
-      }
-      .header_top img {
-        right: 20px;
-      }
-}
-
-@media screen and (max-width: 640px) {
-    .footer_in {
-        padding: 0;
-        padding-top: 7vw;
-        padding-bottom: 7vw;
-        padding-left: 5vw;
-      }
-      .footer_icon {
-        display: none;
-      }
-      .footer_in ul li {
-        display: inline-block;
-        margin-right: 23px;
-        margin-bottom: 20px;
-        font-size: 3vw;
-        position: relative;
-      }
-      .footer_in .footer_text div:nth-child(1) ul li:nth-child(4) a {
-        font-size: 3.5vw;
-      }
-      .footer_text div:nth-child(3) ul li {
-        margin-bottom: 1vw;
-      }
 }
